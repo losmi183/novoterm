@@ -1,0 +1,27 @@
+/**
+*
+* Custom Styles import
+*
+*/
+
+@import 'responsiveness.scss';
+
+
+// Basic
+@import 'basic/reset.scss';
+@import 'basic/boxes.scss';
+@import 'basic/fonts.scss';
+@import 'basic/elements.scss';
+@import 'basic/helpers.scss';
+@import 'basic/effects.scss';
+
+// Partials
+@import 'partials/header.scss';
+@import 'partials/navbar.scss';
+@import 'partials/recomanded.scss';
+@import 'partials/footer.scss';
+
+// Pages
+@import 'pages/naslovna.scss';
+@import 'pages/kategorije.scss';
+@import 'pages/proizvod.scss';

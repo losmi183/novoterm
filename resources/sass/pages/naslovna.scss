@@ -1,0 +1,84 @@
+#showcase {
+    .showcase-left {
+        background-image: url("/images/water-bg.jpg");
+        height: 100%;
+        min-height: 400px;
+        // background: chartreuse;
+        position: relative;
+
+        .info-wrapper {
+            position: absolute;
+            right: 0;
+            bottom: 50px;
+            margin-right: 0;
+        }   
+
+        .info-x {
+            padding: 20px;
+            background: #da251e;
+            color: white;
+            margin-bottom: 10px;   
+            border-left: 10px solid #bf201a;
+        }
+        .info-1 {
+            width: 180px;
+        }
+        .info-2 {
+            width: 240px;
+        }
+        .info-3 {
+            width: 300px;
+        }
+    }
+
+    .showcase-image {
+        padding-top: 50px;
+    }
+    .showcase-line {
+        height: 10px;
+        background: #bf201a;
+    }
+}
+
+#about {
+    background: #f1f1f1;
+    margin: 100px 0;
+    .about-text {
+        padding: 40px;
+    }
+    .about-text {
+
+        h3 {
+            text-transform: uppercase;
+            margin: 20px 0;
+            font-weight: bold;
+        }
+        p {
+            margin: 20px 0; 
+        }
+    }
+
+    .about-image {
+        z-index: 10;
+        position: relative;
+    }
+    .gray-square {
+        z-index: -1;
+        position: absolute;
+        width: 290px;
+        height: 180px;
+        background: #454545;
+        bottom: -8px;
+        left: -8px;
+    }
+    .red-square {
+        z-index: -1;
+        position: absolute;
+        width: 290px;
+        height: 180px;
+        background: #da251e;
+        top: -8px;
+        right: -8px;
+    }
+}
+

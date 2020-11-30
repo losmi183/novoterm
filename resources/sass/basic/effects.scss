@@ -1,0 +1,71 @@
+/**
+*
+* Wrapp image with .effect class
+*
+*/
+
+// Brightness effect
+.effect1 img {
+    filter: brightness(100%);
+    transition: filter 0.3s;
+}
+
+.effect1:hover img {
+    filter: brightness(90%);
+}   
+
+// Show text element gradualy
+.effect1 {
+    position: relative;
+    display: inline-block;  
+
+    &:hover {
+        &:after {
+            top: 60%;
+            opacity: 1;
+        }
+    }
+}
+.effect1:after {
+    content: 'prikaži';    
+    position: absolute;
+    font-size: 0.8;
+    top: 70%;
+    left: 35%;
+    background: #bf201a;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: top 0.3s, opacity 0.3s;
+}
+
+
+// Drow line effect
+.effect1 {
+    &:hover {
+        &:before {
+            width: 92px;
+            opacity: 1;
+        }
+    }
+}
+.effect1:before {
+    z-index: 10000;
+    content: '';    
+    position: absolute;
+    font-size: 0.8;
+    top: 82%;
+    left: 35%;
+    background: #bf201a;
+    opacity: 0;
+
+    width: 2px;
+    height: 2px;
+
+    // border-radius: 50%;
+    // text-transform: uppercase;
+    // opacity: 0;
+    transition: width 0.3s, opacity 0.3s;
+}
